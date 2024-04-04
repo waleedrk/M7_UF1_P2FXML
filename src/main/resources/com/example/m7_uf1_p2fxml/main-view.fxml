@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.m7_uf1_p2fxml.MainViewController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="402.0">
+         <children>
+             <fx:include fx:id="graphicalComponent" source="graphical-component.fxml" />
+            <Button layoutX="230.0" layoutY="30.0" onAction="#onGenerateDNIButtonClick" prefHeight="25.0" prefWidth="146.0" text="Generate DNI" />
+            <TextField fx:id="generatedDni" layoutX="230.0" layoutY="85.0" prefHeight="25.0" prefWidth="146.0" />
+            <Button layoutX="230.0" layoutY="134.0" onAction="#onDeleteGeneratedDNIButtonClick" prefHeight="25.0" prefWidth="146.0" text="Delete generated DNI" />
+            <Label layoutX="230.0" layoutY="68.0" prefHeight="17.0" prefWidth="83.0" text="Generated DNI:" />
+            <Separator layoutX="201.0" orientation="VERTICAL" prefHeight="253.0" prefWidth="1.0" />
+            <Text fx:id="errorText" fill="red" layoutX="230.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="146.0" />
+         </children>
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+      </AnchorPane>
+   </children>
+</Pane>
